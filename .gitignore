@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+all-visions-painel/dados/
+.venv/

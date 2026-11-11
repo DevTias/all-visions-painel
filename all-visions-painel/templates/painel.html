@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Painel ALL VISIONS</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/painel.css') }}">
+</head>
+<body>
+  <div class="nevoa" aria-hidden="true"><i></i><i></i><i></i></div>
+  <div class="grao" aria-hidden="true"></div>
+
+  <aside class="trilho">
+    <a class="marca" href="#panorama" aria-label="ALL VISIONS, panorama">
+      <svg class="olho" id="olho-marca" viewBox="0 0 64 36" aria-hidden="true">
+        <path class="olho-contorno" d="M2 18C14 3 50 3 62 18C50 33 14 33 2 18Z"/>
+        <circle class="olho-iris" cx="32" cy="18" r="9.5"/>
+        <circle class="olho-pupila" cx="32" cy="18" r="3.2"/>
+      </svg>
+      <span class="marca-nome">ALL VISIONS</span>
+    </a>
+
+    <nav class="trilho-nav" aria-label="Seções">
+      <a href="#panorama">Panorama</a>
+      <a href="#ingressos">Ingressos</a>
+      <a href="#promoters">Promoters</a>
+      <a href="#automacao">Automação</a>
+      <a href="#visoes">Visões</a>
+      <a href="#laboratorio">Laboratório</a>
+    </nav>
+
+    <div class="trilho-pe" id="trilho-pe"></div>
+  </aside>
+
+  <main id="palco" tabindex="-1"></main>
+
+  <div id="aviso" class="aviso" role="status" aria-live="polite"></div>
+  <div id="dica" class="dica" role="tooltip"></div>
+  <dialog id="janela" class="janela"></dialog>
+
+  <script src="{{ url_for('static', filename='js/comum.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/painel.js') }}"></script>
+</body>
+</html>

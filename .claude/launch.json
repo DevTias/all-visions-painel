@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "all-visions-painel",
+      "runtimeExecutable": "C:\\Users\\PC\\AppData\\Local\\Packages\\Claude_pzs8sxrjxfjjc\\LocalCache\\Local\\all-visions-painel\\venv\\Scripts\\python.exe",
+      "runtimeArgs": ["all-visions-painel/app.py"],
+      "port": 5000
+    }
+  ]
+}

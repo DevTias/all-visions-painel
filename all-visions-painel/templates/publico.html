@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="robots" content="noindex">
+  <title>ALL VISIONS</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/painel.css') }}">
+</head>
+<body>
+  <div class="nevoa" aria-hidden="true"><i></i><i></i><i></i></div>
+  <div class="grao" aria-hidden="true"></div>
+  <main class="publico" id="publico" data-visao="{{ visao }}" data-chave="{{ chave }}"></main>
+  <script src="{{ url_for('static', filename='js/comum.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/publico.js') }}"></script>
+</body>
+</html>
